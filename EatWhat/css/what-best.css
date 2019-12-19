@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*什么最好吃*/
+.hotFoods {
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px 20px 10px 20px;
+	border-left: 1px solid #D7D7D7;
+	border-bottom: 1px solid #D7D7D7;
+	border-right: 1px solid #D7D7D7;
+}
+.hotFoods h4 {
+	display: block;
+	line-height: 20px;
+	left: 0;
+	top: 0;
+}
+.hotFoods .list {
+	margin: 0;
+	display: flex;
+	justify-content:space-between;
+}
+.hotFoods .list .column {
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	display: block;
+}
+.hotFoods li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.order, .foodName, .x, .hotNum {
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+}
+.order {
+	width: 30px;
+	background-color: #D7D7D7;
+}
+.foodName {
+	width: 120px;
+	background-color: #F2F2F2;
+}
+.hotFoods .list .x {
+	width: 20px;
+	font-size: 10px;
+}
+.hotNum {
+	width: 20px;
+}
+
