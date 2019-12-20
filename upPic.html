@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header style="background-color: #666666; height: 100px; max-width: 100%;"></header>
+<section class="section mt-3">
+    <div>
+        <div id="target"></div>
+        <img src="" id="image" class="m image">
+        <div id="box1">
+            <div class="text-1 box1">将图片拖到此处</div>
+            <div class="text-1">或</div>
+        </div>
+        <button class="up-btn mt-2 verticle" id="selectBtn">
+            <span class="up-text text-2">点击上传</span>
+            <input  class="select-input p-1" onchange="selectPic()" id="file" type="file" accept="image/jpg,image/jpeg,image/png,image/PNG"/>
+        </button>
+        <input class="up-btn m text-2 mt-2 p-1" id="upBtn" type="button" onclick="upToPic()" value="点击上传"/>
+        <div class="text-3 mt-1">最大上传文件大小：50MB</div>
+    </div>
+</section>
+<!--js-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/vue.min.js"></script>
+<script type="text/javascript">
+    <!--本地上传图片并显示-->
+//    $("#target").css("display", "none");
+//    $("#image").css("display", "none");
+    $("#upBtn").css("display", "none");
+    function selectPic(event) {
+        var reads = new FileReader();
+        f = document.getElementById('file').files[0];
+        reads.readAsDataURL(f);
+        reads.onload = function(e) {
+            document.getElementById('image').src = this.result;
+            $("#image").css("display", "block");
+            $("#box1").css("display", "none");
+            $("#upBtn").css("display", "block");
+            $("#selectBtn").css("display", "none");
+        };
+        console.log(f)
+    };
+    function upToPic() {
+        alert("上传成功")
+    }
+    <!--从桌面拖拽图片到网页并显示-->
+    var box1, message;
+    //窗体加载时函数执行
+    window.onload = function() {
+        box1 = document.getElementById("box1");
+        message = document.getElementById("target");
+        box1.ondragover = function(e) {
+            e.preventDefault();
+            $("#upBtn").css("display", "block");
+            $("#selectBtn").css("display", "none");
+        }
+        box1.ondrop = function(e) { /*放置图片时*/
+            e.preventDefault();
+            var file = e.dataTransfer.files[0];
+            var nowfile = new FileReader();
+            nowfile.readAsDataURL(file);
+            console.log(e);
+            nowfile.onload = function(e) {
+                //转义字符
+                box1.innerHTML = "<img src=\"" + nowfile.result + "\"/>";
+            }
+        }
+    }
+</script>
+
+</body>
+
+</html>

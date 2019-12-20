@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.m{
+    margin: auto
+}
+.mt-1{
+    margin-top: 10px
+}
+.mt-2{
+    margin-top: 30px;
+}
+.mt-3{
+    margin-top: 50px;
+}
+.p-1{
+    padding: 10px 30px;
+}
+.text-1{
+    font-size: 28px;
+    font-weight: 300;
+}
+.text-3{
+    font-size: 12px;
+}
+.text-2{
+    font-size: 18px;
+}
+.section{
+    max-width: 80%;
+    background-color: #f2f2f2;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    height: 500px;
+    vertical-align: middle;
+}
+.up-btn{
+    max-width: 10%;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+.select-input{
+    opacity: 0;
+}
+.up-text{
+    position: absolute;
+    top: 24%;
+    left: 26%;
+}
+.image{
+    max-width: 40%;
+    height: 300px;
+    position: relative;
+}
+#box1 img{
+    width: 40%;
+    height: 300px;
+    position: relative;
+}
+.box1{
+    margin-top: 8%;
+}
+/*响应式布局*/
+@media screen and (max-width: 1700px) {
+    .text-2{
+        font-size: 16px;
+    }
+    .up-btn{
+        max-width: 12%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .text-2{
+        font-size: 14px;
+    }
+    .up-btn{
+        max-width: 14%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .text-2{
+        font-size: 14px;
+    }
+    .up-btn{
+        max-width: 18%;
+    }
+}
