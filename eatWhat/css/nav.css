@@ -1,0 +1,200 @@
+@charset "UTF-8";
+/* CSS Document */
+h2, p, li, span, ul {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;	
+}
+input {
+	outline-style: none;
+}
+.w {
+	width: 1920px;
+	height: 830px;
+	margin: 0 auto;
+	text-align: center;
+}
+.ff9900 {
+	color: #ff9900;
+	border-bottom: 1px solid #fff;
+}
+/*----------------------------------------------------*/
+/*导航栏部分开始*/
+#nav {
+	height: 100px;
+	width: 1920px;
+	background-color: #666;
+	border: 1px solid #797979;
+	margin: 0 auto;
+}
+#logo {
+	float: left;
+	margin-top: 22px;
+	margin-left: 55px;
+}
+#main {
+	float: right;
+	margin-right: 55px;
+}
+#main ul li {
+	float: left;
+	line-height: 100px;
+	vertical-align: middle;
+}
+#main ul li a {
+	font-size: 36px;
+	margin-right: 50px;
+}
+#main #sub {
+	width: 140px;
+	height: 40px;
+	padding: 5px 10px;
+	background-color: #169BD5;
+	font-size: 21px;
+	border-radius: 5px;
+	font-weight: 300;
+}
+/*导航栏部分结束*/
+#zwEatWhat {
+	display: block;
+}
+#createEatWhat {
+	display: none;
+}
+#allEatWhat {
+	display: none;
+}
+#whatBestEat {
+	display: none;
+}
+#aboutUs {
+	display: none;
+}
+#subWindow {
+	display: none;
+}
+
+/*首页*/
+.content #zwEatWhat {
+	width: 820px;
+	height: 830px;	
+	margin: 0 auto;
+}
+
+#zwEatWhat h2 {
+	display: block;
+	padding-top: 140px;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+#zwEatWhat_bnt {
+	display: block;
+	width: 180px;;
+	height: 58px;
+	border: 1px solid #696969;
+	background: url(../images/button_bg.png);
+	border-radius: 3px;
+	font-size: 34px;
+	margin: 32px auto;
+}
+#zwEatWhat_input {
+	display: block;
+	margin: 34px auto;
+	width: 440px;
+	height: 45px;
+	font-size: 28px;
+}
+#zwEatWhat_input::placeholder {
+	color: #cacaca;
+}
+#zwEatWhat_a {
+	margin: 45px auto;
+	font-size: 26px;
+}
+#zwEatWhat .share a {
+	width: 162px;
+	font-size: 26px;
+	line-height: 62px;
+	border-radius: 5px;
+}
+.share {
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-around;
+}
+.share a {
+	padding: 5px 3px 5px 3px;
+	font-size: 14px;
+	color: white;
+	background-color: #09CB33;
+}
+/*首页部分结束*/
+
+/*什么最好吃部分开始*/
+.content #whatBestEat {
+	width: 1920;
+	height: 956px;	
+	margin: 0 auto;
+}
+#whatBestEat p {
+	display: block;
+	text-align: left;
+	margin-top: 60px;
+	margin-left: 52px;
+	font-size: 26px;
+	font-weight: 700;
+}
+#whatBestEat #whatBestEat_list {
+	width: 1920;
+	height: 766px;	
+	margin: 55px;
+	display: flex;
+	justify-content: space-between;
+}
+#whatBestEat div {
+	width: 390px;
+	height: 100%;
+}
+#whatBestEat div li {
+	height: 60px;
+	margin-bottom: 16px;
+}
+#whatBestEat div span {
+	display: inline-block;
+	height: 100%;
+	line-height: 60px;
+	vertical-align: middle;
+}
+.hotListOrder {
+	width: 55px;
+	font-size: 20px;
+	background-color: #D6D6D6;
+}
+.hotListName {
+	width: 245px;
+	font-size: 28px;
+	background-color: #F1F1F1;
+}
+.hotListChar {
+	width: 40px;
+}
+.hotListNum {
+	font-size: 20px;
+	width: 50px;
+}
+/*什么最好吃部分结束*/
+
+
+footer {
+    padding:  10px;
+    font-size: 20px;
+    color:#000;
+}
