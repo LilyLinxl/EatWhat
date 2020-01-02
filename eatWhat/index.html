@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/nav.css" />
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/nav_js.js"></script>
+</head>
+
+<body>
+	<div id="nav">
+		<div id="logo">
+			<a href="#"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div id="main">
+			<ul>
+				<li><a href="#" class="ff9900">中午吃什么?</a></li>
+				<li><a href="#">创建吃什么</a></li>
+				<li><a href="#">大家吃什么</a></li>
+				<li><a href="#">什么最好吃</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#" id="sub" >登录/注册</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="content w">
+	<!--	中间部分 开始-->
+		<div id="zwEatWhat">
+			<h2>今天中午吃<span class="ff9900">什么？</span></h2>
+			<input id="zwEatWhat_bnt" type="button" value="开始">
+			<input id="zwEatWhat_input" type="text" placeholder="自定义候选菜单..." />
+			<a id="zwEatWhat_a" class="ff9900" href="#">创建自己专属吃什么界面-&gt;</a>
+			
+			<div class="share">
+				<a href="#">分享到微信</a>
+				<a href="#">分享到微博</a>
+				<a href="#">分享的QQ</a>
+			</div>
+		</div>
+		
+		<div id="createEatWhat"></div>
+		<div id="allEatWhat"></div>
+		<div id="whatBestEat">
+			<p>热门食物</p>
+			<section id="whatBestEat_list">
+				<div>
+					<ul id="listOne"></ul>
+				</div>
+				<div>
+					<ul id="listTwo"></ul>
+				</div>
+				<div>
+					<ul id="listThree"></ul>
+				</div>
+			</section>
+		</div>
+		<div id="aboutUs"></div>
+		<div id="subWindow"></div>
+	<!--	中间部分 开始-->
+	</div>
+	
+	<footer class="w">Copyright© bangneedu黑龙江省马斯克网络科技有限责任公司<br>
+        黑ICP备19001710号-1</footer>
+</body>
+</html>
