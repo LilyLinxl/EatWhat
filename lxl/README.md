@@ -13,12 +13,18 @@
 5．页面四-什么最好吃 
 6．页面五-关于我们 
 7．页面六-个人中心
-
+## 使用须知
++ 1.下载后在根目录下打开命令行
+C:\Users\Administrator\Desktop\EatWhat\EatWhat>
++ 2.输入 npm install ->安装所以依赖项
+如果npm没有按住请自行安装上，其实就是要配置node环境，node环境配置完后npm自动就可以使用了
++ 3.需要mysql数据库，如果不想安装数据库可以自行准备假数据进行测试
++ 4.一切ok后，同样在命令行输入nodemon app.js 启动服务
++ 5.浏览器中输入地址localhost:3000/就可以查看主页面了
 ## 一、项目结构
 ### 1.package.json   
-npm init -f
 ### 2.reademe ,.gitignore
-### 3.安装express mongoose
+### 3.安装express mongoose（如果用的是MongoDB数据库）
 ### 4.新建public公共资源文件夹
 img,css,js
 ### 5.app.js 入口文件
@@ -98,6 +104,7 @@ user用户信息对象一直存不进session里
 处理注册页面，配置body-parser
 
 ## 四、设计数据库
+使用的数据库是mysql
 数据库名称：eat-what
 表：
 user:userId,username,password,email,phone,menuIds,avatar,created_time,last_modified_time
@@ -105,6 +112,6 @@ menu:
 
 ## 五、提取路由模块，封装数据处理文件
 因为没有实际做过，所以可能封装的不是很规范
-### 1.dbHelper.js
+### 1.mysql.js
 
 ## 六、前端调用后端接口，实现具体功能，前后端交互
