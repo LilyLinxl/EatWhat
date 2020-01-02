@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default  navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="/public/images/logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="/">中午吃什么?</a></li>
+                <li><a href="/create">创建吃什么</a></li>
+                <li><a href="/all">大家吃什么</a></li>
+                <li><a href="/best">什么最好吃</a></li>
+                <li><a href="/about">关于我们</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {{ if user }}
+                <img src="../../public/images/avatar-default.png" alt=""> {{user.username}}
+                <a class="btn btn-default navbar-btn" href="/usercenter">个人中心</a> {{ else }}
+                <li><button type="button" class="btn btn-primary navbar-btn" onclick="location.href='/login'">登录/注册</button></li>{{ /if }}
+            </ul>
+        </div>
+    </div>
+</nav>
